@@ -7,6 +7,7 @@ import Colors from '../constants/Colors';
 
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
+import BarcodeScreen from '../screens/BarcodeScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 export default TabNavigator(
@@ -16,6 +17,9 @@ export default TabNavigator(
     },
     Links: {
       screen: LinksScreen,
+    },
+    Barcode: {
+      screen: BarcodeScreen,
     },
     Settings: {
       screen: SettingsScreen,
@@ -35,6 +39,9 @@ export default TabNavigator(
             break;
           case 'Links':
             iconName = Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link';
+            break;
+          case 'Barcode':
+            iconName = Platform.OS === 'ios' ? `ios-qr-scanner${focused ? '' : '-outline'}` : 'md-qr-scanner';
             break;
           case 'Settings':
             iconName =

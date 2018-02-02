@@ -1,12 +1,12 @@
 {
   "expo": {
     "name": "barcode-scanner",
-    "description": "A very interesting project.",
+    "description": "UPC scanning tool.",
     "slug": "barcode-scanner",
     "privacy": "public",
     "sdkVersion": "25.0.0",
     "platforms": ["ios", "android"],
-    "version": "1.0.0",
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "splash": {
